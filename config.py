@@ -17,7 +17,7 @@ LOGGER_ID = int(getenv("LOGGER_ID", ""))
 
 GBAN_LOG_ID = int(getenv("GBAN_LOG", "-1001582846226"))
 
-BOT_NAME = getenv("BOT_NAME", "")
+BOT_NAME = getenv("BOT_NAME", "˹ᴧᴛɪʏᴀ ꭙ ᴍᴜsɪᴄ˼")
 
 OWNER_ID = list(
     map(int, getenv("OWNER_ID", "").split())
