@@ -1,8 +1,11 @@
 from AtiyaMusic import app
+from strings import get_command
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-@app.on_message(filters.command("id"))
+ID_COMMAND = get_command("ID_COMMAND")
+
+@app.on_message(filters.command(ID_COMMAND)
 def ids(_, message):
     reply = message.reply_to_message
     if reply:
