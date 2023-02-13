@@ -14,6 +14,9 @@ PLAYMODE_COMMAND : ["playmode", "mode"]
 CHANNELPLAY_COMMAND : ["channelplay"]
 STREAM_COMMAND : ["stream", "cstream", "streamforce"]
 
+#Ids Command
+ID_COMMAND : ["id"]
+
 #Playlists Command
 PLAYLIST_COMMAND : ["playlist"]
 DELETEPLAYLIST_COMMAND : ["deleteplaylist", "delplaylist"]
