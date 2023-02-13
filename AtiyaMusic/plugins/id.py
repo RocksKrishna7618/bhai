@@ -1,11 +1,8 @@
 from AtiyaMusic import app
-from strings import get_command
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-ID_COMMAND = get_command("ID_COMMAND")
-
-@app.on_message(filters.command(ID_COMMAND)
+@app.on_message(filters.command("id"))
 def ids(_, message):
     reply = message.reply_to_message
     if reply:
@@ -22,3 +19,4 @@ def ids(_, message):
            f"**This chat's ID is**: `{message.chat.id}`",
            reply_markup=markup
         )
+
