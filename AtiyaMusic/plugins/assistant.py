@@ -83,8 +83,7 @@ async def del_pfp(_, message: Message):
 		pfp = [p async for p in USER_ONE.get_chat_photos("me")]
 		await USER_ONE.delete_profile_photos(pfp[0].file_id)
 		return await message.reply_text("sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ ᴀssɪsᴛᴀɴᴛ's ᴘʀᴏғɪʟᴇ ᴘɪᴄ...")
-	except Exception as atiya:
-		print(atiya)
+	except Exception:
 		await message.reply_text("ғᴀɪʟᴇᴅ ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴀssɪsᴛᴀɴᴛ's ᴘʀᴏғɪʟᴇ ᴘɪᴄ")
 
 @app.on_message(filters.command(["delpfp2"]) & filters.user(OWNER_ID))
