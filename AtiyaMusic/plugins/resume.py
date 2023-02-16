@@ -8,6 +8,8 @@ from AtiyaMusic.core.call import AtiyaMusic
 from AtiyaMusic.utils.database import is_music_playing, music_on
 from AtiyaMusic.utils.decorators import AdminRightsCheck
 from AtiyaMusic.utils.inline.play import close_keyboard
+from pyrogram.types import 
+from pyrogram.types import InputMediaPhoto
 
 # Commands
 RESUME_COMMAND = get_command("RESUME_COMMAND")
@@ -27,7 +29,10 @@ async def resume_com(cli, message: Message, _, chat_id):
         return await message.reply_text(_["admin_3"])
     await music_on(chat_id)
     await AtiyaMusic.resume_stream(chat_id)
-    await message.reply_text(
-        _["admin_4"].format(message.from_user.first_name),
-        reply_markup=close_keyboard
+    photo_url = "https://te.legra.ph/file/dc96668863c36c04c6844.jpg" # Replace with the URL of the photo you want to send
+    caption = _["admin_4"].format(message.from_user.first_name)
+    await message.reply_photo(
+        photo=photo_url,
+        caption=caption,
+        reply_markup=close_keyboard,
     )
