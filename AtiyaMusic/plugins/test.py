@@ -7,7 +7,7 @@ from pyrogram.types import Message
 @app.on_message(filters.command(["test"]) & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_text(
-        text=f"💔 <b>ᴏᴡɴᴇʀs:</b>\n1➤ <a href='https://t.me/itz_rocks_krishna'>[˹ᴋʀɪsʜɴᴀ˼]</a>",
+        text=f"💔 <b>ᴏᴡɴᴇʀs:</b>\n1➤ <a href='@iTZViR99'>[𓆩🍁𓆪【𓆩𝐑𝐎𝐂𝐊𝐒𓆪】 ͢ ̶̶ͥ ̶ ̶ͣ ͓ ̶͓ͫ➳🇻ιɾ⛦⃕͜🇮🇳]</a>",
         disable_web_page_preview=True,
         parse_mode="html"
     )
