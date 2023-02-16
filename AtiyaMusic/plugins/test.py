@@ -1,11 +1,12 @@
+imimport asyncio
+
 from AtiyaMusic import app
 from pyrogram import filters
-from config import OWNER_ID
+from pyrogram import Client
+from pyrogram.types import Message
 
-@app.on_message(filters.command("test"))
-def tests(_, message):
-    reply = message.reply_to_message
-    if reply:
-        message.reply_text(
-            f"💔 ᴏᴡɴᴇʀs:\n1➤ {OWNER_ID}"
-        )
+@app.on_message(filters.command(["test"]) & ~filters.edited)
+async def start(client: Client, message: Message):
+    await message.reply_text(
+        text=f"💔 ᴏᴡɴᴇʀs:\n1➤ [˹ᴋʀɪsʜɴᴀ˼](https://t.me/itz_rocks_krishna)",
+    )
