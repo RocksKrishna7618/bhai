@@ -10,8 +10,10 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from pytgcalls.__version__ import __version__ as pytgver
 
-from AtiyaMusic import BOT_NAME, SUDOERS, app
-from AtiyaMusic.Modules import ALL_MODULES
+from config import BOT_NAME
+from AtiyaMusic import app
+from AtiyaMusic.misc import SUDOERS
+from AtiyaMusic.plugins import ALL_MODULES
 
 
 @app.on_message(filters.command(["botstats"]) & SUDOERS)
