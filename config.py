@@ -7,20 +7,20 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
-BOT_TOKEN = getenv("BOT_TOKEN")
+API_ID = int(getenv("API_ID", "28422427"))
+API_HASH = getenv("API_HASH", "9d83e9bc46cab0c6793faebbd324d4e3")
+BOT_TOKEN = getenv("BOT_TOKEN", "5920884683:AAEPYoMF8-ej8jW37iGYwHjKZ4XZnqd515U")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Atiya:Music@cluster0.0zb0uut.mongodb.net/?retryWrites=true&w=majority")
 
-LOGGER_ID = int(getenv("LOGGER_ID", ""))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1001845749326"))
 
 GBAN_LOG_ID = int(getenv("GBAN_LOG", "-1001582846226"))
 
 BOT_NAME = getenv("BOT_NAME", "˹ᴧᴛɪʏᴀ ꭙ ᴍᴜsɪᴄ˼")
 
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
+    map(int, getenv("OWNER_ID", "5210727648").split())
 )
     
 SUPPORT_CHANNEL = getenv(
@@ -81,7 +81,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 )
 
 
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQAG8Ed1KYvQKVCxvUcwc3S7qG34SJtWI59YGJeAuuzVJnoMSKu9VFCVCvN0TmxbBY_ECw1V72QwsoLYQMmaRDyQdhHU9n52iCNOZ8cARKCrHqnFXMCO7H7D6lGMFfpy2GGX9N2H3Nd-YLJnD00QK8BRUfIfUAUR2bz-4y3pyG6gyrDY7K4hYhWNVFLWDWcLjHbIQ8bGetV9NTkZ8xwweTZ9WiS3RD9Q3ApmKsqOGyJivthmCHX77uaOJsSdMyt7nuap80zMpcUYYJ8m4KWzFLK-OV2BFkbrn8sxzTXy1X7YHLlGEqSYPLjZ-Ier21aCWUDH-mKBdZgvaCNi_Q9UJ7GOAAAAAU5dk1YA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
