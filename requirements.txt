@@ -12,7 +12,7 @@ pillow
 psutil
 py-tgcalls==0.8.6
 pykeyboard
-pyrogram==1.4.12
+pyrogram==1.4.16
 python-dotenv
 pyyaml==5.3.1
 requests
@@ -21,6 +21,5 @@ spotipy
 tgcrypto
 numpy
 git+https://github.com/yt-dlp/yt-dlp
-youtube-dl
 youtube-search
 youtube-search-python
