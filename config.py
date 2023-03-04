@@ -7,11 +7,11 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", "28422427"))
-API_HASH = getenv("API_HASH", "9d83e9bc46cab0c6793faebbd324d4e3")
-BOT_TOKEN = getenv("BOT_TOKEN", "5920884683:AAEPYoMF8-ej8jW37iGYwHjKZ4XZnqd515U")
+API_ID = int(getenv("API_ID", ""))
+API_HASH = getenv("API_HASH", "")
+BOT_TOKEN = getenv("BOT_TOKEN", "")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Atiya:Music@cluster0.0zb0uut.mongodb.net/?retryWrites=true&w=majority")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "")
 
 LOGGER_ID = int(getenv("LOGGER_ID", "-1001845749326"))
 
@@ -81,7 +81,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 )
 
 
-STRING1 = getenv("STRING_SESSION", "BQBUVDQRWT-Wb4AW-6JcBuvYUhXs54Khzo3LL-NOKvEsZo8mTuaHeCoJriiSzxO1q20DSz3jpBvcnW-AwUwe_TbUptrDOZ4Goq9pAy0ABXnkSztrW1-gPIcm9efQudTdXBFquVej-7qkl4gtaR_BFVYRneBhYRK4u1K2XpegJe2b0JzjTe6-yWX5UQ1ykOXgGKNIwidrZJlGCwkp4KqMSMR9_qC43Cq0f1OTIj1TO7Uj1yYt7ofOyvVXcZv7-4l_-P3FhNMNQtlHlW0VKDaVyqpPrQjBGKWSXxbx46yUUfEgTIW0vW485YLeFH0lEXdakl6-wPMUIcfBzy5pSi7JfdofAAAAAU5dk1YA")
+STRING1 = getenv("STRING_SESSION", "")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
