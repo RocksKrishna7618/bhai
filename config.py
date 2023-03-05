@@ -17,16 +17,16 @@ LOGGER_ID = int(getenv("LOGGER_ID", "-1001845749326"))
 
 GBAN_LOG_ID = int(getenv("GBAN_LOG", "-1001582846226"))
 
-BOT_NAME = getenv("BOT_NAME", "˹ᴧᴛɪʏᴀ ꭙ ᴍᴜsɪᴄ˼")
+BOT_NAME = getenv("BOT_NAME", "KayD Music")
 
 OWNER_ID = list(
     map(int, getenv("OWNER_ID", "5210727648").split())
 )
     
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/incorrect_krishna")
+    "SUPPORT_CHANNEL", "https://t.me/thechattingclubs")
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/frienddd_zoneee")
+    "SUPPORT_GROUP", "https://t.me/thechattingclubs")
 
 DURATION_LIMIT_MIN = int(
     getenv("DURATION_LIMIT", "900")
